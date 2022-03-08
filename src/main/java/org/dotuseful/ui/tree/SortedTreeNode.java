@@ -124,8 +124,8 @@ public class SortedTreeNode extends AutomatedTreeNode {
 	 *            data
 	 * @param newComparator
 	 *            The comparator by which its children are ordered. A
-	 *            <tt>null</tt> value indicates that the elements' <i>natural
-	 *            ordering </i> should be used.
+	 *            null value indicates that the elements' natural
+	 *            ordering should be used.
 	 */
 	public SortedTreeNode(Object userObject, Comparator newComparator) {
 		this(userObject, true, newComparator);
@@ -144,8 +144,8 @@ public class SortedTreeNode extends AutomatedTreeNode {
 	 *            it is always a leaf node
 	 * @param newComparator
 	 *            The comparator by which its children are ordered. A
-	 *            <tt>null</tt> value indicates that the elements' <i>natural
-	 *            ordering </i> should be used.
+	 *            null value indicates that the elements' natural
+	 *            ordering should be used.
 	 */
 	public SortedTreeNode(Object userObject, boolean allowsChildren,
 			Comparator newComparator) {
@@ -214,10 +214,8 @@ public class SortedTreeNode extends AutomatedTreeNode {
 	}
 
 	/**
-	 * <p>
 	 * Keeps children in sorted order by removing given children and adding them
 	 * back.
-	 * </p>
 	 */
 	protected void sortChildren(Object[] changedChildren) {
 		int cCount = changedChildren.length;

@@ -111,13 +111,11 @@ public class AutomatedTreeModel extends DefaultTreeModel implements
 	}
 
 	/**
-	 * <p>
 	 * Invoked after a node (or a set of siblings) has changed in some way. The
 	 * node(s) have not changed locations in the tree or altered their children
 	 * arrays, but other attributes have changed and may affect presentation.
 	 * Example: the name of a file has changed, but it is in the same location
 	 * in the file system.
-	 * </p>
 	 */
 	public void treeNodesChanged(TreeModelEvent e) {
 		fireTreeNodesChanged(e.getSource(), e.getPath(), e.getChildIndices(), e
@@ -125,9 +123,7 @@ public class AutomatedTreeModel extends DefaultTreeModel implements
 	}
 
 	/**
-	 * <p>
 	 * Invoked after nodes have been inserted into the tree.
-	 * </p>
 	 */
 	public void treeNodesInserted(TreeModelEvent e) {
 		fireTreeNodesInserted(e.getSource(), e.getPath(), e.getChildIndices(),
@@ -135,12 +131,10 @@ public class AutomatedTreeModel extends DefaultTreeModel implements
 	}
 
 	/**
-	 * <p>
 	 * Invoked after nodes have been removed from the tree. Note that if a
 	 * subtree is removed from the tree, this method may only be invoked once
 	 * for the root of the removed subtree, not once for each individual set of
 	 * siblings removed.
-	 * </p>
 	 */
 	public void treeNodesRemoved(TreeModelEvent e) {
 		fireTreeNodesRemoved(e.getSource(), e.getPath(), e.getChildIndices(), e
@@ -148,12 +142,10 @@ public class AutomatedTreeModel extends DefaultTreeModel implements
 	}
 
 	/**
-	 * <p>
 	 * Invoked after the tree has drastically changed structure from a given
 	 * node down. If the path returned by e.getPath() is of length one and the
 	 * first element does not identify the current root node the first element
 	 * should become the new root of the tree.
-	 * <p>
 	 */
 	public void treeStructureChanged(TreeModelEvent e) {
 		fireTreeStructureChanged(e.getSource(), e.getPath(), e

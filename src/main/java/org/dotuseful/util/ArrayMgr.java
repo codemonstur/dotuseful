@@ -417,9 +417,9 @@ public class ArrayMgr {
 	 * Returns the index within source array of the first occurrence of the
 	 * target array, starting at the specified index. The source is the array of
 	 * Object being searched, and the target is the array of Object being
-	 * searched for. Two objects <tt>e1</tt> and <tt>e2</tt> are considered
-	 * <i>equal </i> if <tt>(e1==null ? e2==null
-	 * : e1.equals(e2))</tt>.
+	 * searched for. Two objects e1 and e2 are considered
+	 * equal  if (e1==null ? e2==null
+	 * : e1.equals(e2)).
 	 * 
 	 * @param source
 	 *            the array being searched.

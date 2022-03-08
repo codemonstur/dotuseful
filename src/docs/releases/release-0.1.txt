@@ -1,0 +1,4 @@
+0.1
+
+No code changes with sourceforge project
+Removed HTML tags from javadoc that made the deploy fail

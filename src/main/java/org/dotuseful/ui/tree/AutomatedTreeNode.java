@@ -65,28 +65,28 @@ import javax.swing.tree.MutableTreeNode;
  * own listeners (which is its parent) up to the root node. You can use
  * AutomatedTreeModel which automatically handles events and fires them as usual
  * TreeModel.
- * <p>
+ *
  * A sample of code that uses DefaultTreeModel and DefaultTreeNodes
- * <p>
+ *
  * <code>
  * setUserObject( event.getObject() );<br>
  * //getting a tree model from somewhere<br>
  * DefaultTreeModel model = ( DefaultTreeModel ) titleTree.getModel();<br>
  * model.nodeChanged( node );<br>
  * </code>
- * <p>
+ *
  * A sample of code that uses AutomatedTreeModel and AutomatedTreeNodes
- * <p>
+ *
  * <code>
  * setUserObject( event.getObject() );<br>
  * //Everything else automated<br>
  * </code>
- * <p>
+ *
  * <b>This is not a thread safe class. </b> If you intend to use an
  * AutomatedTreeNode (or a tree of TreeNodes) in more than one thread, you need
  * to do your own synchronizing. A good convention to adopt is synchronizing on
  * the root node of a tree.
- * <p>
+ *
  * 
  * @author dkrukovsky
  */
@@ -218,12 +218,10 @@ public class AutomatedTreeNode extends DefaultMutableTreeNode implements
 	}
 
 	/**
-	 * <p>
 	 * Invoked after nodes have been removed from the tree. Note that if a
 	 * subtree is removed from the tree, this method may only be invoked once
 	 * for the root of the removed subtree, not once for each individual set of
 	 * siblings removed.
-	 * </p>
 	 */
 	public void treeNodesRemoved(TreeModelEvent e) {
 		fireTreeNodesRemoved(e.getSource(), e.getPath(), e.getChildIndices(), e
@@ -231,12 +229,10 @@ public class AutomatedTreeNode extends DefaultMutableTreeNode implements
 	}
 
 	/**
-	 * <p>
 	 * Invoked after the tree has drastically changed structure from a given
 	 * node down. If the path returned by e.getPath() is of length one and the
 	 * first element does not identify the current root node the first element
 	 * should become the new root of the tree.
-	 * <p>
 	 */
 	public void treeStructureChanged(TreeModelEvent e) {
 		fireTreeStructureChanged(e.getSource(), e.getPath(), e
