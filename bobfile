@@ -1,0 +1,8 @@
+include https://raw.githubusercontent.com/codemonstur/bobfiles/master/foss-lib-github-maven
+
+vendor: com.github.codemonstur
+name: dotuseful
+version: 0.1
+release: 8
+packaging: jar
+enablePreview: false
